@@ -1,0 +1,40 @@
+button{
+    border-radius: .5em;
+    border: none;
+    background: $bg-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4em 1em;
+    font-size: 1rem;
+    color: $li-text;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 .5em 0 transparentize($shadow, 0.4);
+    &:active,&:hover{
+        box-shadow: 0 0 1em 0 transparentize($shadow, 0.4);
+    }
+    .btn--label{
+        padding-left: .25rem;
+    }
+}
+.btn-sucsses{
+    background-color: $highlight;
+    font-size: 1.2rem;
+    &:hover,&:active{
+        background-color: $highlight-darken;
+        cursor: pointer;
+    }
+}
+button.full{
+    width: 100%;
+    border-radius: 0;
+}
+.sm-btn{
+    background-color: $highlight;
+    font-size: .8rem;
+
+    &:hover,&:active{
+        background-color: $highlight-darken;
+        cursor: pointer;
+    }
+}

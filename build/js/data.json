@@ -1,0 +1,40 @@
+{
+    "simple":{
+        "name":"defult",
+        "income":"eur",
+        "incomeSymbol":"",
+        "expenses":{
+            "type":"simple",
+            "amount":"0"
+        }
+    },
+    "advance":{
+        "name":"defult",
+        "income":"eur",
+        "incomeSymbol":"",
+        "expenses":{
+            "type":"advance",
+            "amountPD":"0",
+            "amountPM":"0",
+            "amountPY":"0",
+            "list":[
+                {
+                    "name":"buss ticket",
+                    "amount":"0",
+                    "payment":"daily",
+                    "date": null
+                },{
+                    "name":"phone bill",
+                    "amount":"0",
+                    "payment":"monthly",
+                    "date":"10th"
+                },{
+                    "name":"house rent",
+                    "amount":"0",
+                    "payment":"yearly",
+                    "date":"10th jun"
+                }
+            ]
+        }
+    }
+}

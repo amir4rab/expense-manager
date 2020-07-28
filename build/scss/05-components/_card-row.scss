@@ -1,0 +1,49 @@
+.card-row{
+    padding: 2rem 0;
+    width: 90%;
+    margin: auto;
+    &__inner{
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 300px;
+        overflow: hidden;
+        margin: auto;
+        box-shadow: 0 0 1em 0 transparentize($shadow, 0.4);
+        border-radius: 1em;
+    }
+    &__indecator{
+        width: 40%;
+        max-width: 200px;
+        margin: auto;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            height: .4rem;
+            min-width: 1.5rem;
+            background: $highlight;
+            border-radius: .5rem;
+            margin: 0 .25rem;
+            transition: all .1s ease-in-out;
+            &:hover,&:active{
+                background-color: $highlight-darken;
+                cursor: pointer;
+                box-shadow: 0 0 1em 0 transparentize($shadow, 0.4);
+            }
+        }
+        .active--indecator{
+            flex-grow: 1;
+            width: 2rem;
+        }
+    }
+}
+@media (min-width:800px) and (min-height:600px){
+    .card-row{
+        margin: 0 auto;
+        padding: 1rem 0;
+        &__indecator div{
+            height: .25rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+button,input,body{
+    font-family:'Open Sans', sans-serif;
+}
+*::after,*::before,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: $bg-sec;
+    color: $li-text;
+}
+@media (min-width: 1800px){
+    body{
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+}

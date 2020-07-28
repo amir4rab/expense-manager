@@ -1,0 +1,19 @@
+.fl-card{
+    background-color: $bg-main;
+    min-width: 300px;
+    padding: 1rem 1.5rem;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &--inner{
+        text-align:center;
+        font-size: 1rem;
+        strong{
+            font-size:inherit;
+            font-weight:600;
+            padding: 0 .25rem;
+        }
+    }
+}
