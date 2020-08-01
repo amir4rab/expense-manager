@@ -1,12 +1,14 @@
+//for transition between cards use these: card.children[0].style = `transform: translateX(-${card.clientWidth}px)`;
+
 .card-row{
     padding: 2rem 0;
     width: 90%;
     margin: auto;
+    overflow: hidden;
     &__inner{
         display: flex;
         flex-wrap: nowrap;
         max-width: 300px;
-        overflow: hidden;
         margin: auto;
         box-shadow: 0 0 1em 0 transparentize($shadow, 0.4);
         border-radius: 1em;
