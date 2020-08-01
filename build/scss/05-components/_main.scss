@@ -6,43 +6,7 @@ main{
     }
     height: 100vh;
 }
-// @media (min-width:800px) and (min-height:600px){
-//     main{
-//         padding: 1rem 0;
-//         display: flex;
-//         justify-content: center;
-//         height: 100vh;
-//         .left-section{
-//             width: 45%;
-//             padding: 1rem;
-//             height: 100%;
-//         }
-//         .right-section{
-//             height: 100%;
-//             .card-row.fl-row:nth-child(2){
-//                 display: block;
-//             }
-//             width: 55%;
-//             padding: 1rem;
-//         }
-//     }
-// }
-// @media (min-width:850px) and (min-height:600px){
-//     main .right-section{
-//         max-width: 450px;
-//     }
-// }
-// @media (min-width:1000px) and (min-height:600px){
-//     main .right-section{
-//         max-width: 500px;
-//     }
-// }
-// @media (min-width:1500px) and (min-height:600px){
-//     main .right-section{
-//         max-width: 800px;
-//     }
-// }
-@media (min-width:800px) and (min-height:600px){
+@media (min-width:1200px) and (min-height:800px){
     main{
         width: 100%;
         padding: 2rem;

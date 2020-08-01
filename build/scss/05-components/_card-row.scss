@@ -8,9 +8,8 @@
     &__inner{
         display: flex;
         flex-wrap: nowrap;
-        max-width: 300px;
+        max-width: 100%;
         margin: auto;
-        box-shadow: 0 0 1em 0 transparentize($shadow, 0.4);
         border-radius: 1em;
     }
     &__indecator{
@@ -43,7 +42,7 @@
 @media (min-width:800px) and (min-height:600px){
     .card-row{
         margin: 0 auto;
-        padding: 1rem 0;
+        padding: 0;
         &__indecator div{
             height: .25rem;
         }

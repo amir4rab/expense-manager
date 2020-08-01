@@ -1,4 +1,4 @@
-@media (min-width:800px) and (min-height:600px){
+@media (min-width:1200px) and (min-height:800px){
     .card-row.fl-row{
         position: relative;
         height: 100%;
@@ -26,31 +26,3 @@
         }
     }
 }
-// @media (min-width:1000px) and (min-height:600px){
-//     .card-row.fl-row{
-//         width: 450px;
-//         min-width: 450px;
-//         .card-row__inner{
-//             min-width: 450px;
-//             width: 450px;
-//             .fl-card{
-//                 min-width: 450px;
-//                 width: 450px;
-//             }
-//         }
-//     }
-// }
-// @media (min-width:1500px) and (min-height:600px){
-//     .card-row.fl-row{
-//         width: 750px;
-//         min-width: 750px;
-//         .card-row__inner{
-//             min-width: 750px;
-//             width: 750px;
-//             .fl-card{
-//                 min-width: 750px;
-//                 width: 750px;
-//             }
-//         }
-//     }
-// }
