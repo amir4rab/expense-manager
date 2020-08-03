@@ -1,0 +1,43 @@
+.input-group{
+    position: relative;
+    margin-top: 2rem;
+    input{
+        font-size: 1rem;
+        background-color: $bg-sec;
+        border: none;
+        border-bottom: .1rem solid $highlight-darken;;
+        padding: .5rem 1rem ;
+        color: $li-text;
+        transition: all .1s ease-in-out;
+        outline: none;
+    }
+    label{
+        z-index: 2;
+        position: absolute;
+        left: 1rem;
+        bottom: .5rem;
+        font-size: 1rem;
+        user-select: none;
+        pointer-events: none;
+        transition: all .1s ease-in-out;
+    }
+    input:required:invalid{
+        outline: none;
+    }
+    input:required{
+        outline: none;
+    }
+    input:invalid{
+        outline: none;
+    }
+    input:focus ,input:valid{
+        border-bottom: .1rem solid $highlight;
+        outline: none;
+    }
+    input:focus + label,input:valid + label{
+        outline: none;
+        bottom: 2.5rem;
+        font-size: .8rem;
+        color: transparentize($highlight-darken,.2);
+    }
+}

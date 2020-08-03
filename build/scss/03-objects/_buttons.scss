@@ -25,9 +25,31 @@ button{
         cursor: pointer;
     }
 }
-button.full{
+.btn-sucsses-darken{
+    color: $bg-sec;
+    background-color: $highlight;
+    font-size: 1.2rem;
+    &:hover,&:active{
+        background-color: $highlight-darken;
+        cursor: pointer;
+    }
+}
+.btn-secondary{
+    color: $highlight;
+    background-color: $bg-sec;
+    font-size: 1.2rem;
+    &:hover,&:active{
+        background-color: $bg-main;
+        cursor: pointer;
+    }
+}
+button.btn-full{
     width: 100%;
     border-radius: 0;
+    box-shadow: none;
+    &:active,&:hover{
+        box-shadow: none;
+    }
 }
 .sm-btn{
     background-color: $highlight;

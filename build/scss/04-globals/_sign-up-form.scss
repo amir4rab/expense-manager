@@ -1,0 +1,41 @@
+.sign-up-form{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title{
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    scroll-snap-align: start;
+}
+.sign-up-form.push-up{
+    padding-bottom: 15vh;
+}
+.sign-up{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+    width: 100vw;
+}
+.faas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    .btn-group{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
