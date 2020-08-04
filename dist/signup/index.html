@@ -7,20 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="../js/app.js" defer></script>
+    <script  type="text/javascript" src="../js/singup.bundle.js" defer></script>
 </head>
-<body class="faas">
+<body class="sign-up-body">
     <div class="sign-up">
         <div class="sign-up-form push-up" id="signUpSelectLang">
             <h2 class="title">
                 I speak
             </h2>
             <div class="radio-btn-group">
-                <input required class="radio-btn-group__input" type="radio" value="En" name="langInput" id="langEn">
+                <input required class="radio-btn-group__input" type="radio" value="En" name="langInput" id="langEn" checked >
                 <label class="radio-btn-group__label" for="langEn">En</label>
-                <input required class="radio-btn-group__input" type="radio" value="De" name="langInput" id="langDe">
+                <input required class="radio-btn-group__input" type="radio" value="De" name="langInput" id="langDe" disabled>
                 <label class="radio-btn-group__label" for="langDe">De</label>
-                <input required class="radio-btn-group__input" type="radio" value="Fa" name="langInput" id="langFa">
+                <input required class="radio-btn-group__input" type="radio" value="Fa" name="langInput" id="langFa" disabled>
                 <label class="radio-btn-group__label" for="langFa">Fa</label>
             </div>
         </div>
@@ -36,14 +36,15 @@
             
             <div class="input-group">
                 <input required id="incomeInput" type="text">
-                <label for="incomeInput">Income</label>
+                <label for="incomeInput">Yearly income</label>
             </div>
 
-            <!-- need to be changed \/ -->
-            <div class="input-group">
-                <input required id="nameInput" type="text">
-                <label for="nameInput">Name</label>
-            </div>
+            <select class="select-menu" name="income-currency" id="incomeCurrencyInput">
+                <option value="euro">Euro </option>
+                <option value="usd">Us dollar </option>
+                <option value="brp">Uk pound</option>
+                <option value="irr">irht </option>
+            </select>
 
         </div>
         <div class="sign-up-form" id="signUpSelectExpensesMethod">
@@ -52,9 +53,9 @@
                 Manage Expenses Wia
             </h2>
             <div class="radio-btn">
-                <input required class="radio-btn__input" type="radio" value="simpleExpensesMethod" name="expensesMethod" id="simpleExpensesMethod">
+                <input required class="radio-btn__input" type="radio" value="simpleExpensesMethod" name="expensesMethod" id="simpleExpensesMethod" checked>
                 <label class="radio-btn__label" for="simpleExpensesMethod">List (advance)</label>
-                <input required class="radio-btn__input" type="radio" value="advanceExpensesMethod" name="expensesMethod" id="advanceExpensesMethod">
+                <input required class="radio-btn__input" type="radio" value="advanceExpensesMethod" name="expensesMethod" id="advanceExpensesMethod" disabled>
                 <label class="radio-btn__label" for="advanceExpensesMethod">Amount (Simple)</label>
             </div>
 
@@ -75,17 +76,20 @@
             </div>
 
         </div>
-        <div class="sign-up-form" id="signUpSelectAdvanceExpensesMethod">
+        <div class="sign-up-form" style="display: none;" id="signUpSelectAdvanceExpensesMethod">
 
         </div>
-        <div class="sign-up-form" id="signUpSelectAdvanceExpensesMethodAdd">
+        <div class="sign-up-form" style="display: none;" id="signUpSelectAdvanceExpensesMethodAdd">
 
         </div>
-        <div class="sign-up-form" id="signUpWellcome">
+        <div class="sign-up-form" style="display: none;" id="signUpWellcome">
 
         </div>
     </div>
-    <div class="btn-group">
+    <div class="progres-bar">
+        <div class="inner"></div>
+    </div>
+    <div class="btn-group" style="z-index: 5;">
         <button class="btn-secondary btn-full">Go back</button>
         <button class="btn-sucsses-darken btn-full">Done</button>
     </div>

@@ -5,7 +5,7 @@
         font-size: 1rem;
         background-color: $bg-sec;
         border: none;
-        border-bottom: .1rem solid $highlight-darken;;
+        border-bottom: .1rem solid $highlight-darken;
         padding: .5rem 1rem ;
         color: $li-text;
         transition: all .1s ease-in-out;
@@ -29,6 +29,9 @@
     }
     input:invalid{
         outline: none;
+    }
+    .invalid{
+        border-bottom: .1rem solid red;
     }
     input:focus ,input:valid{
         border-bottom: .1rem solid $highlight;

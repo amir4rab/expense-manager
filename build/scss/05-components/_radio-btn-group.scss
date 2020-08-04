@@ -22,4 +22,7 @@
         background: $highlight;
         color: $bg-sec;
     }
+    &__input:disabled + &__label{
+        opacity: .2;
+    }
 }

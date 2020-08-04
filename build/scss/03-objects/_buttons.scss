@@ -36,10 +36,10 @@ button{
 }
 .btn-secondary{
     color: $highlight;
-    background-color: $bg-sec;
+    background-color: $bg-main;
     font-size: 1.2rem;
     &:hover,&:active{
-        background-color: $bg-main;
+        background-color: $bg-sec;
         cursor: pointer;
     }
 }

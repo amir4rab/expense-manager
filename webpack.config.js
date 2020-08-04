@@ -2,9 +2,12 @@ const path = require('path');
 const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
     mode:'development',
-    entry: './build/js/app.js',
+    entry: {
+        index: './build/js/app.js',
+        singup: './build/js/signup.js'
+    },
     output: {
-        filename: 'app.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname,'dist','js'),
         publicPath: 'dist/js/'
     },

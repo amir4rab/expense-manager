@@ -51,4 +51,7 @@
             background: $highlight;
         }
     }
+    &__input:disabled + &__label{
+        opacity: .2;
+    }
 }
