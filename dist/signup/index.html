@@ -16,12 +16,12 @@
                 I speak
             </h2>
             <div class="radio-btn-group">
-                <input required class="radio-btn-group__input" type="radio" value="En" name="langInput" id="langEn" checked >
-                <label class="radio-btn-group__label" for="langEn">En</label>
-                <input required class="radio-btn-group__input" type="radio" value="De" name="langInput" id="langDe" disabled>
-                <label class="radio-btn-group__label" for="langDe">De</label>
-                <input required class="radio-btn-group__input" type="radio" value="Fa" name="langInput" id="langFa" disabled>
-                <label class="radio-btn-group__label" for="langFa">Fa</label>
+                <input required class="radio-btn-group__input" type="radio" value="En" name="langInput" id="langEnRadioBtn" checked >
+                <label class="radio-btn-group__label" for="langEnRadioBtn">En</label>
+                <input required class="radio-btn-group__input" type="radio" value="De" name="langInput" id="langDeRadioBtn" disabled>
+                <label class="radio-btn-group__label" for="langDeRadioBtn">De</label>
+                <input required class="radio-btn-group__input" type="radio" value="Fa" name="langInput" id="langFaRadioBtn" disabled>
+                <label class="radio-btn-group__label" for="langFaRadioBtn">Fa</label>
             </div>
         </div>
         <div class="sign-up-form" id="signUpSelectName">
@@ -39,7 +39,7 @@
                 <label for="incomeInput">Yearly income</label>
             </div>
 
-            <select class="select-menu" name="income-currency" id="incomeCurrencyInput">
+            <select class="select-menu" name="income-currency" id="incomeCurrencySelection">
                 <option value="euro">Euro </option>
                 <option value="usd">Us dollar </option>
                 <option value="brp">Uk pound</option>
@@ -53,26 +53,26 @@
                 Manage Expenses Wia
             </h2>
             <div class="radio-btn">
-                <input required class="radio-btn__input" type="radio" value="simpleExpensesMethod" name="expensesMethod" id="simpleExpensesMethod" checked>
-                <label class="radio-btn__label" for="simpleExpensesMethod">List (advance)</label>
-                <input required class="radio-btn__input" type="radio" value="advanceExpensesMethod" name="expensesMethod" id="advanceExpensesMethod" disabled>
-                <label class="radio-btn__label" for="advanceExpensesMethod">Amount (Simple)</label>
+                <input required class="radio-btn__input" type="radio" value="simpleExpensesMethod" name="expensesMethod" id="simpleExpensesMethodRadioBtn" checked>
+                <label class="radio-btn__label" id="simpleExpensesMethodRadioBtnLbl" for="simpleExpensesMethodRadioBtn">List (advance)</label>
+                <input required class="radio-btn__input" type="radio" value="advanceExpensesMethod" name="expensesMethod" id="advanceExpensesMethodRadioBtn" disabled>
+                <label class="radio-btn__label" id="advanceExpensesMethodRadioBtnLbl" for="advanceExpensesMethodRadioBtn">Amount (Simple)</label>
             </div>
 
         </div>
         <div class="sign-up-form" id="signUpSelectSimpleExpensesMethod">
 
             <div class="input-group">
-                <input required id="dailyExpenses" type="number">
-                <label for="dailyExpenses">Daily expenses</label>
+                <input required id="dailyExpensesInput" type="number">
+                <label for="dailyExpensesInput">Daily expenses</label>
             </div>
             <div class="input-group">
-                <input required id="monthlyExpenses" type="number">
-                <label for="monthlyExpenses">Monthly expenses</label>
+                <input required id="monthlyExpensesInput" type="number">
+                <label for="monthlyExpensesInput">Monthly expenses</label>
             </div>
             <div class="input-group">
-                <input required id="yearlyExpenses" type="number">
-                <label for="yearlyExpenses">Yearly expenses</label>
+                <input required id="yearlyExpensesInput" type="number">
+                <label for="yearlyExpensesInput">Yearly expenses</label>
             </div>
 
         </div>
