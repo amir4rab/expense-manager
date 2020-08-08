@@ -1,3 +1,4 @@
+import {DataManager} from "./DataManager/DataManager";
 class Ui{
     constructor(){
         this.uiList = [
@@ -43,8 +44,13 @@ class Ui{
                 index: 4
             }
         ];
+
         this.activeIndex = 0;
+
         this.indexMax = this.uiList.length;
+
+        this.progresBar = document.getElementsByClassName("progres-bar")[0].children[0];
+
         this.uiList.forEach(page =>{
             page.inputs.forEach(input=>{
                 if(input.includes("Input")){
@@ -54,6 +60,14 @@ class Ui{
                 }
             })
         });
+
+        this.goNextBtn = document.getElementById("goNextBtn");
+        goNextBtn.addEventListener("click",this.pageScroll.bind(this , "next"));
+
+        this.goBackBtn = document.getElementById("goBackBtn");
+        goBackBtn.addEventListener("click",this.pageScroll.bind(this , "back"));
+
+        this.importer();
     }
     BtnEventListener(fn){
         fn === "next" ? fn++: fn--
@@ -69,6 +83,23 @@ class Ui{
     }
     inputKeydown(e){
         console.log(e.target.value);
+    }
+    pageScroll(input){
+        if(input === "next"){
+            if(this.activeIndex + 1 < this.indexMax){
+                this.activeIndex++
+            }
+        }else if(input === "back"){
+            if(this.activeIndex > 0){
+                this.activeIndex--
+            }
+        }
+        document.getElementById(this.uiList[this.activeIndex].id).scrollIntoView({behavior: "smooth"});
+        this.progresBar.style = `width:${this.activeIndex / (this.indexMax - 1) * 100}%;`;
+        
+    }
+    importer(){
+        new DataManager();
     }
 }
 

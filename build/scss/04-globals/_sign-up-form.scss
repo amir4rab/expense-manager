@@ -17,7 +17,7 @@
     padding-bottom: 15vh;
 }
 .sign-up{
-    overflow-y: scroll;
+    overflow: hidden;;
     scroll-snap-type: y mandatory;
     height: 100%;
     width: 100vw;
@@ -28,6 +28,7 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
     .btn-group{
         position: absolute;
         left: 0;
